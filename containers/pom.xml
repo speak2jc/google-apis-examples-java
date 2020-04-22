@@ -5,8 +5,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.james</groupId>
-    <artifactId>googleapi</artifactId>
+    <artifactId>containers</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <dependencies>
         <!--<dependency>-->
             <!--<groupId>com.google.cloud</groupId>-->
