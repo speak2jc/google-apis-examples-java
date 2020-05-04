@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class Clusters {
+public class ClustersGoogleCloud {
 
     public static Occurrence getClusters(String projectId)
             throws IOException {
@@ -48,12 +48,12 @@ public class Clusters {
         // Set this env var before running
         // GOOGLE_APPLICATION_CREDENTIALS=/Users/jamez/code/go/src/github.com/speak2jc/container-analysis/explorer-273804-b151dd684c86.json
 
-        Clusters clusters = new Clusters();
+        ClustersGoogleCloud clusters = new ClustersGoogleCloud();
 
         try {
-            //Clusters.clusters("abc", "explorer-273804");
+            //ClustersGoogleCloud.clusters("abc", "explorer-273804");
 
-            Clusters.getClusters("explorer-273804");
+            ClustersGoogleCloud.getClusters("explorer-273804");
 
         } catch (Exception e) {
             e.printStackTrace();

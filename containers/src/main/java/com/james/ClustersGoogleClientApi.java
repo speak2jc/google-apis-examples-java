@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class ContainerExample {
+public class ClustersGoogleClientApi {
     public static void main(String args[]) throws IOException, GeneralSecurityException {
         // Deprecated. The Google Developers Console [project ID or project
         // number](https://support.google.com/cloud/answer/6158840).

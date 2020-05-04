@@ -19,25 +19,19 @@
         </plugins>
     </build>
     <dependencies>
-        <!--<dependency>-->
-            <!--<groupId>com.google.cloud</groupId>-->
-            <!--<artifactId>libraries-bom</artifactId>-->
-            <!--<version>5.1.0</version>-->
-            <!--<type>pom</type>-->
-            <!--<scope>import</scope>-->
-        <!--</dependency>-->
-        <dependency>
-            <groupId>com.google.cloud</groupId>
-            <artifactId>google-cloud-containeranalysis</artifactId>
-            <version>0.119.2-beta</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/com.google.cloud/google-cloud-container-bom -->
+
+        <!--Containers-->
+
+        <!--Method 1 - Google Cloud-->
+
         <dependency>
             <groupId>com.google.cloud</groupId>
             <artifactId>google-cloud-container</artifactId>
             <version>1.0.4</version>
-            <!--<type>pom</type>-->
         </dependency>
+
+
+        <!--Method 2 - Google APIs (client & services) -->
 
         <dependency>
             <groupId>com.google.api-client</groupId>
@@ -45,13 +39,19 @@
             <version>1.30.9</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/com.google.apis/google-api-services-container -->
         <dependency>
             <groupId>com.google.apis</groupId>
             <artifactId>google-api-services-container</artifactId>
             <version>v1-rev76-1.18.0-rc</version>
         </dependency>
 
+        <!--Container analysis-->
+
+        <dependency>
+            <groupId>com.google.cloud</groupId>
+            <artifactId>google-cloud-containeranalysis</artifactId>
+            <version>0.119.2-beta</version>
+        </dependency>
 
         <!--<dependency>-->
             <!--<groupId>com.google.cloud</groupId>-->
