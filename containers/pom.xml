@@ -39,6 +39,20 @@
             <!--<type>pom</type>-->
         </dependency>
 
+        <dependency>
+            <groupId>com.google.api-client</groupId>
+            <artifactId>google-api-client</artifactId>
+            <version>1.30.9</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.google.apis/google-api-services-container -->
+        <dependency>
+            <groupId>com.google.apis</groupId>
+            <artifactId>google-api-services-container</artifactId>
+            <version>v1-rev76-1.18.0-rc</version>
+        </dependency>
+
+
         <!--<dependency>-->
             <!--<groupId>com.google.cloud</groupId>-->
             <!--<artifactId>google-cloud-container</artifactId>-->
