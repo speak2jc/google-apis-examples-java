@@ -14,10 +14,10 @@ import java.util.stream.Collectors;
 public class Clusters {
 
     public static Occurrence getClusters(String projectId)
-            throws IOException, InterruptedException {
+            throws IOException {
 
         ClusterManagerClient client = ClusterManagerClient.create();
-        ListClustersResponse clusters = client.listClusters("projects/explorer-273804/location/-");
+        ListClustersResponse clusters = client.listClusters("projects/" + projectId + "/location/-");
 
         Map<String, String> clusterNameToIp = new HashMap<>();
         if (clusters.getClustersCount() > 0) {
@@ -55,9 +55,7 @@ public class Clusters {
 
             Clusters.getClusters("explorer-273804");
 
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
